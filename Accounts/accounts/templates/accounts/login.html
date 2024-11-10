@@ -1,0 +1,20 @@
+<!-- 추가 -->
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>로그인 화면</h1>
+    <!-- 추가 구글 로그인 링크 -->
+    {% comment %} <a class="social_login3" href="{% provider_login_url 'google' %}">구글 로그인</a>
+    <!-- 추가 카카오 로그인 링크 -->
+    <a class="social_login3" href="{% provider_login_url 'kakao' %}">카카오 로그인</a> {% endcomment %}
+    <!-- 추가 네이버 로그인 링크 -->
+    <a class="social_login3" href="{% provider_login_url 'naver' %}">네이버 로그인</a>
+  </body>
+</html>
